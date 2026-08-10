@@ -188,10 +188,13 @@ export default function Home() {
   return (
     <main className="site-shell">
       <header className="topbar">
-        <a className="brand" href="#game" aria-label="Охота на баги — к игре">
-          <span className="brand-mark" aria-hidden="true">B</span>
-          <span>BUG<span>//</span>HUNT</span>
-        </a>
+        <div className="brand-lockup">
+          <a className="brand" href="#game" aria-label="Охота на баги — к игре">
+            <span className="brand-mark" aria-hidden="true">B</span>
+            <span>BUG<span>//</span>HUNT</span>
+          </a>
+          <span className="creator-credit">БАЙ <strong>ЕВГЕНИЙ ОСИПОВ</strong></span>
+        </div>
         <div className="best-score" aria-label={`Лучший результат: ${bestScore}`}>
           <span>ЛУЧШИЙ РЕЗУЛЬТАТ</span>
           <strong>{String(bestScore).padStart(4, "0")}</strong>
