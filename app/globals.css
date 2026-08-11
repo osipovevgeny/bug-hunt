@@ -46,6 +46,12 @@ button { font: inherit; }
   border-bottom: 1px solid var(--line);
 }
 
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .brand {
   color: var(--paper);
   text-decoration: none;
@@ -59,6 +65,24 @@ button { font: inherit; }
 }
 
 .brand > span:last-child span { color: var(--acid); }
+
+.creator-credit {
+  max-width: 120px;
+  padding-left: 20px;
+  color: #66736b;
+  border-left: 1px solid var(--line);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 8px;
+  line-height: 1.45;
+  letter-spacing: 0.13em;
+}
+
+.creator-credit strong {
+  display: block;
+  color: var(--paper);
+  font-size: 9px;
+  font-weight: 700;
+}
 
 .brand-mark {
   width: 34px;
@@ -456,6 +480,11 @@ footer b { color: var(--acid); }
 @media (max-width: 640px) {
   .site-shell { padding: 0 14px; }
   .topbar { min-height: 72px; }
+  .brand-lockup { gap: 9px; }
+  .brand { gap: 8px; font-size: 15px; }
+  .brand-mark { width: 29px; height: 29px; }
+  .creator-credit { max-width: 82px; padding-left: 9px; font-size: 6px; line-height: 1.4; }
+  .creator-credit strong { font-size: 7px; }
   .best-score span { display: none; }
   .game-layout { display: flex; flex-direction: column; gap: 32px; padding: 34px 0 26px; }
   .intro-panel { display: block; width: 100%; }
